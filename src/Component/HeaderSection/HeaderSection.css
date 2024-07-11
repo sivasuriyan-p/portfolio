@@ -1,0 +1,96 @@
+.parent-container-header-section-Dark {
+    background-color: #1E1E1E;
+}
+
+.parent-container-header-section-Light {
+    background-color: white;
+}
+
+.header-section {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 100px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.name-text {
+    color: #FD6F00;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.role-parent{
+    max-width: 300px;
+}
+
+.card {
+    color: #ffffff;
+    padding: 40px;
+    text-align: left;
+    border-radius: 10px;
+    max-width: 400px;
+    /* margin: 0 auto; */
+}
+
+.intro {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.name {
+    color: #ff6600;
+    font-size: 24px;
+    margin: 0;
+}
+
+.role {
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: bold;
+    white-space: pre-line;
+    line-height: 1.2;
+}
+
+.designer {
+    text-align: end !important;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.social-media-parent {
+    display: flex;
+    gap: 5px;
+}
+
+.person-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .header-section {
+
+        flex-direction: column-reverse;
+        /* flex-direction: column; */
+
+    }
+
+    .imgIntro{
+        max-width: 300px;
+    }
+}
