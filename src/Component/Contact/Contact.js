@@ -9,7 +9,7 @@ const Contact = () => {
 
 
     return (
-        <div className={`parent-contact-${theme}`}>
+        <div id='contact' className={`parent-contact-${theme}`}>
             <div className="contact-section">
                 <h1 className={theme}>Lets Design Together</h1>
                 <p className={theme}>

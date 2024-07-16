@@ -40,7 +40,7 @@ const Projects = () => {
         : projects;
 
     return (
-        <div className={`parent-my-projects-${theme}`}>
+        <div id='projects' className={`parent-my-projects-${theme}`}>
             <div className={`my-projects-container`}>
                 <h1 className={theme}>My Projects</h1>
                 <p className={`description ${theme}`}>

@@ -42,7 +42,7 @@ export default function HeaderSection() {
 
 
     return (
-        <div className={`parent-about-me-${theme}`}>
+        <div id='about_me' className={`parent-about-me-${theme}`}>
             <div className="about-me-container">
                 <div className="image-container">
                     <img src={about_man} alt="Profile" className="imgObj imgAboutMe" width={430} />

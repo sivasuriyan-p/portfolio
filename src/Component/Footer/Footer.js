@@ -32,6 +32,35 @@ const SocialMedia = [
     },
 ]
 
+const footerMenu = [
+    {
+        id: 1,
+        name: 'Home',
+        href: '#home'
+    }, {
+        id: 2,
+        name: 'About Me',
+        href: '#about_me'
+    }, {
+        id: 3,
+        name: 'Services',
+        href: '#services',
+    }, {
+        id: 4,
+        name: 'Projects',
+        href: '#projects',
+    }, {
+        id: 5,
+        name: 'Testimonials',
+        href: '#testimonials',
+    }, {
+        id: 6,
+        name: 'Contact',
+        href: '#contact',
+    }
+
+]
+
 const Footer = () => {
 
     const { theme, setTheme } = useContext(Theme);
@@ -44,12 +73,9 @@ const Footer = () => {
                 <img src={theme === 'Light' ? LightLogo : DarkLogo} alt="Logo" width={150} className='imgObj' />
             </div>
             <div className={`footer-nav ${theme}`} >
-                <a className={theme} href="#home">Home</a>
-                <a className={theme} href="#about">About Me</a>
-                <a className={theme} href="#services">Services</a>
-                <a className={theme} href="#projects">Projects</a>
-                <a className={theme} href="#testimonials">Testimonials</a>
-                <a className={theme} href="#contact">Contact</a>
+                {footerMenu.map((menu) => (
+                    <a key={menu.id} className={theme} href={menu.href}>{menu.name}</a>
+                ))}
             </div>
             <div className='social-media-parent'>
                 {SocialMedia.map((media) => (

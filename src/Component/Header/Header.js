@@ -57,7 +57,7 @@ export default function Header() {
                     </div>
                     <ul class="links">
                         {headerMenu.map((menu) => (
-                            <li key={menu.id}><a className={theme} href="#home">{menu.name}</a></li>
+                            <li key={menu.id}><a className={theme} href={menu.href}>{menu.name}</a></li>
                         ))}
                         <li>
                             <button className='downloadBtn btnClr'>Download CV</button>
